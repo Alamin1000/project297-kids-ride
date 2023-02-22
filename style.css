@@ -1,6 +1,6 @@
 /*-----------------------------------=========Main-Style-Sheet=========----------------------------------------*/
 
-
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&display=swap');
 @font-face {
   font-family: 'Sohne Breit';
   src: url('webfonts/SohneBreit-ExtrafettKursiv.woff2') format('woff2'),
@@ -165,6 +165,7 @@
 :root {
   --theme__color1: #fff;
   --sohneBreit: 'Sohne Breit';
+  --akaya-kanadaka: 'Akaya Kanadaka', cursive;
 }
 *,::before,::after {
   box-sizing: border-box;
