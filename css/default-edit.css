@@ -1,4 +1,23 @@
+/* buttons */
+.default-button {
+    font-size: 16px;
+    min-height: 56px;
+    padding: 5px 29px;
+    border-radius: 5px;
+    font-weight: 700;
+    background: var(--theme__color1);
+    color: #fff;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+/* buttons-end */
+
 /* small-tools */
+.pb-0 {
+    padding-bottom: 0 !important;
+}
 .underline {
     text-decoration: underline !important;
 }
