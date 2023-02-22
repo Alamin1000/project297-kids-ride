@@ -1,0 +1,438 @@
+/*-----------------------------------=========Main-Style-Sheet=========----------------------------------------*/
+
+
+@font-face {
+  font-family: 'Sohne Breit';
+  src: url('webfonts/SohneBreit-ExtrafettKursiv.woff2') format('woff2'),
+      url('webfonts/SohneBreit-ExtrafettKursiv.woff') format('woff'),
+      url('webfonts/SohneBreit-ExtrafettKursiv.ttf') format('truetype');
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Sohne Breit';
+  src: url('webfonts/SohneBreit-Extraleicht.woff2') format('woff2'),
+      url('webfonts/SohneBreit-Extraleicht.woff') format('woff'),
+      url('webfonts/SohneBreit-Extraleicht.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Sohne Breit';
+  src: url('webfonts/SohneBreit-ExtraleichtKursiv.woff2') format('woff2'),
+      url('webfonts/SohneBreit-ExtraleichtKursiv.woff') format('woff'),
+      url('webfonts/SohneBreit-ExtraleichtKursiv.ttf') format('truetype');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Sohne Breit';
+  src: url('webfonts/SohneBreit-Fett.woff2') format('woff2'),
+      url('webfonts/SohneBreit-Fett.woff') format('woff'),
+      url('webfonts/SohneBreit-Fett.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Sohne Breit';
+  src: url('webfonts/SohneBreit-Extrafett.woff2') format('woff2'),
+      url('webfonts/SohneBreit-Extrafett.woff') format('woff'),
+      url('webfonts/SohneBreit-Extrafett.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Sohne Breit';
+  src: url('webfonts/SohneBreit-FettKursiv.woff2') format('woff2'),
+      url('webfonts/SohneBreit-FettKursiv.woff') format('woff'),
+      url('webfonts/SohneBreit-FettKursiv.ttf') format('truetype');
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Sohne Breit';
+  src: url('webfonts/SohneBreit-Halbfett.woff2') format('woff2'),
+      url('webfonts/SohneBreit-Halbfett.woff') format('woff'),
+      url('webfonts/SohneBreit-Halbfett.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Sohne Breit';
+  src: url('webfonts/SohneBreit-BuchKursiv.woff2') format('woff2'),
+      url('webfonts/SohneBreit-BuchKursiv.woff') format('woff'),
+      url('webfonts/SohneBreit-BuchKursiv.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Sohne Breit';
+  src: url('webfonts/SohneBreit-Leicht.woff2') format('woff2'),
+      url('webfonts/SohneBreit-Leicht.woff') format('woff'),
+      url('webfonts/SohneBreit-Leicht.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Sohne Breit';
+  src: url('webfonts/SohneBreit-Kraftig.woff2') format('woff2'),
+      url('webfonts/SohneBreit-Kraftig.woff') format('woff'),
+      url('webfonts/SohneBreit-Kraftig.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Sohne Breit';
+  src: url('webfonts/SohneBreit-DreiviertelfettKurs.woff2') format('woff2'),
+      url('webfonts/SohneBreit-DreiviertelfettKurs.woff') format('woff'),
+      url('webfonts/SohneBreit-DreiviertelfettKurs.ttf') format('truetype');
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Sohne Breit';
+  src: url('webfonts/SohneBreit-Dreiviertelfett.woff2') format('woff2'),
+      url('webfonts/SohneBreit-Dreiviertelfett.woff') format('woff'),
+      url('webfonts/SohneBreit-Dreiviertelfett.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Sohne Breit';
+  src: url('webfonts/SohneBreit-KraftigKursiv.woff2') format('woff2'),
+      url('webfonts/SohneBreit-KraftigKursiv.woff') format('woff'),
+      url('webfonts/SohneBreit-KraftigKursiv.ttf') format('truetype');
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Sohne Breit';
+  src: url('webfonts/SohneBreit-LeichtKursiv.woff2') format('woff2'),
+      url('webfonts/SohneBreit-LeichtKursiv.woff') format('woff'),
+      url('webfonts/SohneBreit-LeichtKursiv.ttf') format('truetype');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Sohne Breit';
+  src: url('webfonts/SohneBreit-Buch.woff2') format('woff2'),
+      url('webfonts/SohneBreit-Buch.woff') format('woff'),
+      url('webfonts/SohneBreit-Buch.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Sohne Breit';
+  src: url('webfonts/SohneBreit-HalbfettKursiv.woff2') format('woff2'),
+      url('webfonts/SohneBreit-HalbfettKursiv.woff') format('woff'),
+      url('webfonts/SohneBreit-HalbfettKursiv.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+
+:root {
+  --theme__color1: #fff;
+  --sohneBreit: 'Sohne Breit';
+}
+*,::before,::after {
+  box-sizing: border-box;
+}
+body {
+  font-size: 16px;
+  line-height: 1.5;
+  background-color: #fff;
+  overflow-x: hidden;
+  word-wrap: break-word;
+  word-break: normal;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  font-family: var(--sohneBreit);
+}
+a, a:active, a:focus, a:active, a:hover {
+  text-decoration:none !important;
+  color: inherit;
+}
+input{
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+a:hover,
+a:focus,
+input:focus,
+input:hover,
+select:focus,
+select:hover,
+select:active,
+textarea:focus,
+textarea:hover,
+button:focus {
+  outline: none;
+}
+::placeholder {
+  opacity: 1;
+}
+:focus::placeholder {
+  opacity: 0;
+}
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+  table-layout: fixed; /* Prevents HTML tables from becoming too wide */
+  width: 100%;
+}
+img {
+  -ms-interpolation-mode: bicubic;
+  border: 0;
+  height: auto;
+  max-width: 100%;
+  vertical-align: middle;
+}
+iframe {
+  width: 100%;
+}
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6{
+  font-weight: 700;
+}
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+p{
+  margin-bottom: 15px;
+}
+p:last-child{
+  margin: 0;
+}
+.main-wrap {
+  width: 100%;
+  overflow: hidden;
+}
+@media (max-width: 1799px) and (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+@media (min-width: 1800px) {
+  .container {
+    max-width: 1745px;
+  }
+}
+main {
+  margin-top: 70px;
+}
+@media (max-width: 575px) {
+  main {
+  margin-top: 50px;
+  }
+}
+
+
+
+
+/* header */
+.header-section {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+}
+/* header-end */
+
+
+
+
+
+
+
+/* practice */
+.nav-a li {
+  display: inline-block;
+  background-color: red;
+  color: #fff;
+  margin: 10px;
+  padding: 10px 15px;
+  font-size: 16px;
+  cursor: pointer;
+}
+.items {
+  display: flex;
+}
+.item {
+  height: 150px;
+  width: 150px;
+  background-color: blue;
+  margin: 10px;
+}
+.parallax-window {
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.parallax-window h1 {
+  font-size: 100px;
+  color: yellow;
+}
+
+
+
+
+
+
+
+/* ---offcanvas-css--- */
+.offcanvas-open {
+  font-size: 22px;
+  transition: 0.3s;
+}
+.offcanvas-open:hover {
+  color: #97A3AE;
+}
+.offcanvas-close {
+  color: var(--theme__color1);
+  position: absolute;
+  transition: 0.3s;
+  right: 25px;
+  top: 25px;
+}
+.offcanvas-close:hover {
+  color: #97A3AE;
+}
+.offcanvas-menu {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  transform: translateX(-105%);
+  transition: 0.3s;
+}
+.offcanvas-menu.active {
+  transform: translate(0);
+}
+.offcanvas-menu .offmenu {
+  max-width: 250px;
+  min-width: 200px;
+  z-index: 5;
+  position: relative;
+  background: #d5dce2;
+  height: 100%;
+  padding: 50px 20px 40px;
+  overflow: auto;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+.offcanvas-menu .offmenu :-webkit-scrollbar {
+  display: none;
+}
+.offcanvas-menu ul li a {
+  display: block;
+  text-align: center;
+  font-size: 16px;
+  color: var(--theme__color1);
+  padding: 10px;
+}
+.dropdown-menu-custom ul {
+  background: #fff;
+  padding: 20px 0;
+}
+.dropdown-menu-custom ul li a {
+  color: #97A3AE;
+}
+.offcanvas-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.178);
+  z-index: 2;
+  transform: 0;
+  z-index: 900;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s;
+}
+.offcanvas-overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+/* ---offcanvas-css-end---*/
+
+/* --preloader-- */
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9999;
+  overflow: hidden;
+  background: #fff;
+}
+#preloader:before {
+  content: "";
+  position: fixed;
+  top: calc(50% - 30px);
+  left: calc(50% - 30px);
+  border: 6px solid #73469B;
+  border-top-color: #e2eefd;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  -webkit-animation: animate-preloader 1s linear infinite;
+  animation: animate-preloader 1s linear infinite;
+}
+@-webkit-keyframes animate-preloader {
+  0% {
+      transform: rotate(0deg);
+  }
+  100% {
+      transform: rotate(360deg);
+  }
+}
+@keyframes animate-preloader {
+  0% {
+      transform: rotate(0deg);
+  }
+  100% {
+      transform: rotate(360deg);
+  }
+}
+/* --preloader-end-- */
