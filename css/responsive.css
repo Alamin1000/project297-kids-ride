@@ -122,6 +122,40 @@
     .mega-menu__str1__left {
         margin-right: 80px;
     }
+
+    .s-hero-section__inner {
+        min-height: 743px;
+    }
+
+
+    .show-card__tc h3 {
+        font-size: 16px;
+        margin: 0 0 11px;
+    }
+    .show-card__tc p {
+        padding: 0 40px;
+        font-size: 16px;
+    }
+    .show-card__tc {
+        padding: 32px 0 0;
+    }
+
+
+    .popular-card__image {
+        height: 340px;
+    }
+    .popular-card__tmb__image {
+        width: 129px;
+    }
+    .popular-card__tmb__tc .save {
+        font-size: 12px;
+        margin: 0 0 5px;
+    }
+    .popular-card__tmb__tc .price {
+        font-size: 12px;
+        gap: 15px;
+    }
+
 }
 
 
@@ -132,6 +166,51 @@
     }
     .mega-menu__str1__left.mega-menu__str1__left--in-img {
         gap: 20px;
+    }
+
+    .show-card__tc p {
+        padding: 0 20px;
+        font-size: 12px;
+    }
+    .show-card__tc h3 {
+        font-size: 13px;
+        margin: 0 0 11px;
+    }
+    .show-card__tc {
+        padding: 26px 0 0;
+    }
+
+
+    .popular-card__image {
+        height: 280px;
+    }
+    .popular-card__tmb__image {
+        width: 130px;
+        flex-shrink: 0;
+    }
+    .popular-card__tmb__tc .price {
+        font-size: 10px;
+    }
+    .popular-card__tmb__tc .price {
+        font-size: 10px;
+        gap: 2px;
+        flex-direction: column;
+    }
+    .popular-card__tmb__tc {
+        padding: 12px 10px 12px 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        flex-grow: 1;
+        align-items: flex-start;
+    }
+
+    .s-hero__content h2 {
+        font-size: 30px;
+    }
+    .s-hero__content p {
+        font-size: 18px;
     }
 }
 
@@ -453,7 +532,30 @@
 
     .blog-card__image {
         height: 360px;
+    }
+
+    .s-hero__content h2 {
+        font-size: 40px;
+    }
+    .s-hero__content p {
+        font-size: 20px;
+    }
+    .show-card__wrapper {
+        grid-template-columns: repeat(1,1fr);
+    }
+    .show-card__tc h3 {
+        font-size: 15px;
+    }
+    .show-card__tc p {
+        font-family: var(--sohneBreit);
+    }
     
+
+    .popular-card .popular-card__tmb {
+        display: none;
+    }
+    .show-section {
+        padding: 45px 0 45px;
     }
 }
 

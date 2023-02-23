@@ -38,6 +38,12 @@
 /* buttons-end */
 
 /* small-tools */
+.bg-light {
+    background: #F8F8F8 !important;
+}
+.bg-white {
+    background: #fff !important;
+}
 .pb-0 {
     padding-bottom: 0 !important;
 }
