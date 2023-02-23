@@ -2,7 +2,7 @@
 .default-button {
     font-size: 16px;
     min-height: 56px;
-    padding: 5px 29px;
+    padding: 5px 28px;
     border-radius: 5px;
     font-weight: 700;
     background: var(--theme__color1);
@@ -11,12 +11,38 @@
     align-items: center;
     justify-content: center;
     text-align: center;
+    transition: .3s;
+    border: 2px solid transparent;
+}
+.default-button:hover{
+    background: #2f2f2f;
+    color: #fff;
+}
+
+.default-button.default-button--bordered {
+    border-color: var(--theme__color1);
+    color: var(--theme__color1);
+    background: transparent;
+}
+.default-button.default-button--bordered:hover {
+    color: #fff;
+    background: var(--theme__color1);
+}
+
+
+.default-button.default-button--sm {
+    min-height: 35px;
+    padding: 3px 8px;
+    font-size: 12px;
 }
 /* buttons-end */
 
 /* small-tools */
 .pb-0 {
     padding-bottom: 0 !important;
+}
+.d-none {
+    display: none !important;
 }
 .underline {
     text-decoration: underline !important;

@@ -1,27 +1,51 @@
-// (function ($) {
-//   "use strict";
+// menu-open
+let menuToggler = document.querySelector(".menu-open");
+menuToggler.addEventListener("click", function (event) {
+  event.preventDefault();
 
-//   // offcanvas-js
-//   $(".offcanvas-open").click(function () {
-//     $(".offcanvas-menu").addClass("active");
-//     $(".offcanvas-overlay").addClass("active");
-//   });
-//   $(".offcanvas-menu a").click(function () {
-//     $(".offcanvas-menu").removeClass("active");
-//     $(".offcanvas-overlay").removeClass("active");
-//   });
-//   $(".close-offcanvas").click(function () {
-//     $(".offcanvas-menu").removeClass("active");
-//     $(".offcanvas-overlay").removeClass("active");
-//   });
-//   $(document).mouseup(function (e) {
-//     var container = $(".offmenu");
+  let mobileMenu = document.querySelector(".mobile-menu__outer");
+  mobileMenu.classList.toggle("active");
+  let inI = this.querySelector("i");
+  inI.classList.toggle("fa-bars");
+  inI.classList.toggle("fa-times");
+});
 
-//     // If the target of the click isn't the container
-//     if (!container.is(e.target) && container.has(e.target).length === 0) {
-//       $(".offcanvas-menu").removeClass("active");
-//       $(".offcanvas-overlay").removeClass("active");
-//     }
-//   });
+// data-collapse
+let collapseToggler = document.querySelectorAll("[data-collapse]");
+collapseToggler.forEach((toggler) => {
+  toggler.addEventListener("click", function (event) {
+    event.preventDefault();
+    let thisIs = this;
+    if (!toggler.classList.contains("active")) {
+      expand(thisIs);
+    } else {
+      collapse(thisIs);
+    }
+  });
+  function expand(thisIs) {
+    let target = document.querySelectorAll(
+      thisIs.getAttribute("data-collapse")
+    );
+    target.forEach((eachTarget) => {
+      eachTarget.classList.add("active");
+    });
+    thisIs.classList.add("active");
 
-// })(jQuery);
+    let parent = target[0].getAttribute("collapse-parent");
+    let others = document.querySelectorAll(parent + " [data-collapse]");
+    others.forEach((eachOther) => {
+      if (eachOther !== thisIs) {
+        collapse(eachOther);
+      }
+    });
+  }
+  function collapse(thisIs) {
+    let target = document.querySelectorAll(
+      thisIs.getAttribute("data-collapse")
+    );
+    target.forEach((eachTarget) => {
+      eachTarget.classList.remove("active");
+    });
+    thisIs.classList.remove("active");
+  }
+});
